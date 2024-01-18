@@ -16,6 +16,7 @@ public void initialize() throws Exception {
     for(Sports sports : Sports.getSports()) {
         System.out.println(sports);
         NBATV.getItems().add(sports);
+        OlympiaTV.getItems().add(sports);
     }
 
     //void saveData() throws Exception {
