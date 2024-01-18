@@ -1,3 +1,5 @@
+package com.example.revist;
+
 import java.io.File;
 import java.util.Scanner;
 
@@ -61,7 +63,7 @@ public class Olympia extends Sports {
     }
 
     public static void readData() throws Exception {
-        File dataFile = new File("Olympia Data");
+        File dataFile = new File("src/main/java/com/example/revist/Olympia Data");
         Scanner dataScanner = new Scanner(dataFile);
         dataScanner.useDelimiter("\n");
 

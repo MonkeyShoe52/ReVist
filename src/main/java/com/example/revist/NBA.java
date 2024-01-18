@@ -1,3 +1,6 @@
+package com.example.revist;
+
+
 import java.io.File;
 import java.util.Scanner;
 
@@ -54,7 +57,7 @@ class NBA extends Sports{
         return (getRank() + " " + getName() + " " + getTeam() + " " + getSalary());
     }
     public static void readData() throws Exception {
-        File dataFile = new File("playerSalary Data");
+        File dataFile = new File("src/main/java/com/example/revist/playerSalary Data");
         Scanner dataScanner = new Scanner(dataFile);
         dataScanner.useDelimiter("\t|\n");
         while (dataScanner.hasNext()) {

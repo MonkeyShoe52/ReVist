@@ -20,10 +20,10 @@ public class GUILauncher extends Application {
         stage.show();
     }
 
-    @Override
-    public void stop() throws Exception {
-        cont.saveData();
-    }
+   // @Override
+    //public void stop() throws Exception {
+     //   cont.saveData();
+  //  }
     public static void main(String[] args) {
         launch();
     }
