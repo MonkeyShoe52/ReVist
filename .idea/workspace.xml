@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38636d12-6de6-4d78-8f4b-f4d502068b52" name="Changes" comment="Update with data readers.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/revist/Main.java" afterDir="false" />
+    <list default="true" id="38636d12-6de6-4d78-8f4b-f4d502068b52" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/revist/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/revist/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/revist/GUILauncher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/revist/GUILauncher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/revist/NBA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/revist/NBA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/revist/Olympia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/revist/Olympia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/revist/Sports.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/revist/Sports.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/revist/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/revist/hello-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,11 +37,6 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/jadenwilliams/IdeaProjects/ReVist/src/main/java/com/example/revist&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.revist" />
-    </key>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -54,19 +46,6 @@
       <option name="presentableId" value="Default" />
       <updated>1705432474051</updated>
     </task>
-    <task id="LOCAL-00001" summary="Update with data readers.">
-      <option name="closed" value="true" />
-      <created>1705584458419</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1705584458419</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Update with data readers." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update with data readers." />
   </component>
 </project>
