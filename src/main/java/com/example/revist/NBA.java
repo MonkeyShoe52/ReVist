@@ -1,10 +1,12 @@
 package com.example.revist;
 
 
+import javafx.scene.control.TableView;
+
 import java.io.File;
 import java.util.Scanner;
 
-class NBA extends Sports{
+public class NBA extends Sports{
     private int Rank;
     private String Name;
     private String Team;
@@ -17,9 +19,6 @@ class NBA extends Sports{
         Team = team;
         Salary = salary;
     }
-
-
-    void playerSalary(int myRank, String myName, String myTeam, long mySalary) {}
 
     public int getRank() {
         return Rank;
@@ -56,7 +55,7 @@ class NBA extends Sports{
     public String toString(){
         return (getRank() + " " + getName() + " " + getTeam() + " " + getSalary());
     }
-    public static void readData() throws Exception {
+    public static void readData(TableView tv) throws Exception {
         File dataFile = new File("src/main/java/com/example/revist/playerSalary Data");
         Scanner dataScanner = new Scanner(dataFile);
         dataScanner.useDelimiter("\t|\n");
@@ -66,7 +65,11 @@ class NBA extends Sports{
             String Team = dataScanner.next();
             Long Salary = dataScanner.nextLong();
             NBA teamData = new NBA (Name, Rank, Team, Salary);
-            System.out.println(teamData);
+            if (tv != null) {
+                tv.getItems().add(teamData);
+            } else {
+                System.out.println(teamData);
+            }
         }
     }
 }

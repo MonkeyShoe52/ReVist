@@ -1,25 +1,42 @@
 package com.example.revist;
 
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.control.cell.TextFieldTableCell;
+import javafx.util.converter.IntegerStringConverter;
 
 import java.io.*;
 
 public class Controller {
     public TableView NBATV;
+    public TableColumn Ranking;
+    public TableColumn Name;
+
     public TableView OlympiaTV;
+    public TableColumn Total;
+    public TableColumn Judging;
 
-    
-public void initialize() throws Exception {
-    NBA.readData();
-    Olympia.readData();
 
-    for(Sports sports : Sports.getSports()) {
-        System.out.println(sports);
-        NBATV.getItems().add(sports);
-        OlympiaTV.getItems().add(sports);
-    }
 
-    //void saveData() throws Exception {
+    public void initialize() throws Exception {
+
+    NBA.readData(NBATV);
+    Olympia.readData(OlympiaTV);
+
+        Olympia.setEditable(true);
+        Ranking.setCellValueFactory(new PropertyValueFactory<NBA, Integer>("Rank"));
+        Ranking.setCellFactory(TextFieldTableCell.forTableColumn(new IntegerStringConverter()));
+        Ranking.setOnEditCommit(event -> {
+            Olympia cellData = event.getRowValue();
+            cellData.setRank(event.getNewValue());
+        });
+        Total.setCellValueFactory(new PropertyValueFactory<Olympia, Integer>("Total"));
+
+
+
+
+        //void saveData() throws Exception {
         //File fileForData = new File("Angelos");
         //FileOutputStream outputStream = new FileOutputStream(fileForData);
         //ObjectOutputStream objOutputStream= new ObjectOutputStream(outputStream);

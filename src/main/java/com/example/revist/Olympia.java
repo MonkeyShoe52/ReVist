@@ -1,5 +1,7 @@
 package com.example.revist;
 
+import javafx.scene.control.TableView;
+
 import java.io.File;
 import java.util.Scanner;
 
@@ -22,6 +24,9 @@ public class Olympia extends Sports {
         Judging = judging;
         Finals = finals;
         Prize = prize;
+    }
+
+    public static void setEditable(boolean b) {
     }
 
     public int getTotal() {
@@ -62,7 +67,7 @@ public class Olympia extends Sports {
         return ( "Rank: " + getRank() + " " + "Prize: " + getPrize() + " " + "Name: " + getName() + " " + "Judging: " + getJudging() + " " + "Finals: " + getFinals() + " " + "Total: " + getTotal());
     }
 
-    public static void readData() throws Exception {
+    public static void readData(TableView tv) throws Exception {
         File dataFile = new File("src/main/java/com/example/revist/Olympia Data");
         Scanner dataScanner = new Scanner(dataFile);
         dataScanner.useDelimiter("\n");
@@ -82,7 +87,11 @@ public class Olympia extends Sports {
             int Finals = Integer.parseInt(dataScanner.next());
             int Total = Integer.parseInt(dataScanner.next());
             Olympia athlete = new Olympia(Name,Rank,Total, Judging, Finals, Prize  );
-            System.out.println(athlete);
+            if (tv != null) {
+                tv.getItems().add(athlete);
+            } else {
+                System.out.println(athlete);
+            }
         }
     }
 }
