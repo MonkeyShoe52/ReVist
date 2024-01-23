@@ -22,7 +22,7 @@ public class GUILauncher extends Application {
 
     @Override
     public void stop() throws Exception {
-      //  cont.saveData();
+      cont.saveData();
     }
     public static void main(String[] args) {
         launch();

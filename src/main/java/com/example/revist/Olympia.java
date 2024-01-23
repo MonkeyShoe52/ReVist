@@ -3,9 +3,10 @@ package com.example.revist;
 import javafx.scene.control.TableView;
 
 import java.io.File;
+import java.io.Serializable;
 import java.util.Scanner;
 
-public class Olympia extends Sports {
+public class Olympia extends Sports implements Serializable {
 
     private int Total;
     private int Judging;
@@ -26,8 +27,6 @@ public class Olympia extends Sports {
         Prize = prize;
     }
 
-    public static void setEditable(boolean b) {
-    }
 
     public int getTotal() {
         return Total;

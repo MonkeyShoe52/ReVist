@@ -4,36 +4,18 @@ package com.example.revist;
 import javafx.scene.control.TableView;
 
 import java.io.File;
+import java.io.Serializable;
 import java.util.Scanner;
 
-public class NBA extends Sports{
-    private int Rank;
-    private String Name;
+public class NBA extends Sports implements Serializable {
+
     private String Team;
     private long Salary;
 
-    public NBA(String name, int rank, String team, long salary) {
-        super(name, rank);
-        Rank = rank;
-        this.Name = name;
+    public NBA(String Name, int rank, String team, long salary) {
+        super(Name, rank);
         Team = team;
         Salary = salary;
-    }
-
-    public int getRank() {
-        return Rank;
-    }
-
-    public void setRank(int rank) {
-        this.Rank = rank;
-    }
-
-    public String getName() {
-        return Name;
-    }
-
-    public void setName(String name) {
-        Name = name;
     }
 
     public String getTeam() {
@@ -41,7 +23,7 @@ public class NBA extends Sports{
     }
 
     public void setTeam(String team) {
-        Team = Team;
+        Team = team;
     }
 
     public long getSalary() {

@@ -1,15 +1,15 @@
 package com.example.revist;
 
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Sports {
+public class Sports implements Serializable {
 
     private String Name;
 
     private int rank;
 
-private static ArrayList<Sports> Sports = new ArrayList<>();
 
  public Sports(String Name, int rank) {
     this.Name= Name;
@@ -33,11 +33,4 @@ private static ArrayList<Sports> Sports = new ArrayList<>();
     }
 
 
-    public static ArrayList<Sports> getSports() {
-        return Sports;
-    }
-
-    public static void setSports(ArrayList<Sports> sports) {
-        Sports = sports;
-    }
 }

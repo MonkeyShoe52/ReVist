@@ -6,8 +6,5 @@ class Main {
         NBA.readData(null);
         Olympia.readData(null);
 
-        for(Sports sports : Sports.getSports()) {
-            System.out.println(sports);
-        }
     }
 }
